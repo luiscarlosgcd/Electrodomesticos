@@ -4,6 +4,7 @@ class Electrodomestico:
         self.color = "blanco"
         self.consumo = 'F'
         self.peso = 5 #constante
+        self.precioF = self.precioFinal()
 
     def setPrecio(self, precio): #getter y setter para precio
         self.precio = precio
@@ -41,4 +42,23 @@ class Electrodomestico:
 
     def precioFinal(self):
         if self.getConsumo() == 'A':
-            
+            self.precioF = self.precio + 100
+        elif self.getConsumo() == 'B':
+            self.precioF = self.precio + 80
+        elif self.getConsumo() == 'C':
+            self.precioF = self.precio + 60
+        elif self.getConsumo() == 'D':
+            self.precioF = self.precio + 50
+        elif self.getConsumo() == 'E':
+            self.precioF = self.precio + 30
+        elif self.getConsumo() == 'F':
+            self.precioF = self.precio + 10
+
+        elif 0 <= self.getPeso() <= 19 :
+            self.precioF = self.precio + 10
+        elif 19 < self.getPeso() <= 49 :
+            self.precioF = self.precio + 50
+        elif 49 < self.getPeso() <= 79 :
+            self.precioF = self.precio + 80
+        elif 79 < self.getPeso() :
+            self.precioF = self.precio + 100
