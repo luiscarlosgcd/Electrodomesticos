@@ -38,3 +38,7 @@ class Electrodomestico:
     def comprobarConsumo(self):
         if (self.consumo == ('A' or 'B' or 'C' or 'D' or 'E', 'F')):
             self.consumo = 'F'
+
+    def precioFinal(self):
+        if self.getConsumo() == 'A':
+            
