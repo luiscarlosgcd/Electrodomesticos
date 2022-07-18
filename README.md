@@ -33,8 +33,8 @@ Un constructor con la carga y el resto de atributos heredados. Recuerda que debe
 Los métodos que se implementara serán:
 Método get de carga.
 precioFinal():, si tiene una carga mayor de 30 kg, aumentara el precio 50 €, sino es así no se incrementara el precio. Llama al método padre y añade el código necesario. Recuerda que las condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.
-Crearemos una subclase llamada Television con las siguientes características:
 
+Crearemos una subclase llamada Television con las siguientes características:
 Sus atributos son resolución (en pulgadas) y sintonizador TDT (booleano), ademas de los atributos heredados.
 Por defecto, la resolución sera de 20 pulgadas y el sintonizador sera false.
 Los constructores que se implementaran serán:
@@ -45,7 +45,6 @@ Los métodos que se implementara serán:
 Método get de resolución y sintonizador TDT.
 precioFinal(): si tiene una resolución mayor de 40 pulgadas, se incrementara el precio un 30% y si tiene un sintonizador TDT incorporado, aumentara 50 €. Recuerda que las condiciones que hemos visto en la clase Electrodomestico también deben afectar al precio.
 Ahora crea una clase ejecutable que realice lo siguiente:
-
 Crea un array de Electrodomesticos de 10 posiciones.
 Asigna a cada posición un objeto de las clases anteriores con los valores que desees.
 Ahora, recorre este array y ejecuta el método precioFinal().
